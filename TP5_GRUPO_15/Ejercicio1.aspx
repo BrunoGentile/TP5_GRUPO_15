@@ -14,11 +14,11 @@
             height: 23px;
         }
         .auto-style3 {
-            width: 263px;
+            width: 245px;
         }
         .auto-style4 {
             height: 23px;
-            width: 263px;
+            width: 245px;
         }
         .auto-style7 {
             width: 168px;
@@ -42,7 +42,7 @@
             width: 119px;
         }
         .auto-style13 {
-            width: 263px;
+            width: 245px;
             height: 16px;
         }
         .auto-style14 {
@@ -142,13 +142,69 @@
                 <tr>
                     <td class="auto-style4">Nombre Sucursal: </td>
                     <td class="auto-style8">
-                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBox1" runat="server" Height="16px" Width="169px"></asp:TextBox>
                     </td>
                     <td class="auto-style12">&nbsp;</td>
                     <td class="auto-style10"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">Descripción:</td>
+                    <td class="auto-style8">
+                        <asp:TextBox ID="txtDescripcion" runat="server" Height="39px" TextMode="MultiLine" Width="177px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">Provincia:</td>
+                    <td class="auto-style8">
+                        <asp:DropDownList ID="ddlProvincia" runat="server" Height="20px" Width="183px">
+                            <asp:ListItem>--Seleccionar--</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td class="auto-style12"></td>
+                    <td class="auto-style10"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">direccion:</td>
+                    <td class="auto-style8">
+                        <asp:TextBox ID="txtDireccion" runat="server" Height="16px" Width="172px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style8">
+                        &nbsp;</td>
+                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style8">
+                        <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" />
+                    </td>
+                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
                 </tr>
             </table>
         </div>
