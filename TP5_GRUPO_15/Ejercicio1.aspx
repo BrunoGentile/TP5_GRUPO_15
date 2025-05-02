@@ -60,6 +60,44 @@
         .auto-style17 {
             height: 16px;
         }
+        .auto-style18 {
+            width: 245px;
+            height: 30px;
+        }
+        .auto-style19 {
+            width: 168px;
+            height: 30px;
+        }
+        .auto-style20 {
+            width: 119px;
+            height: 30px;
+        }
+        .auto-style21 {
+            width: 199px;
+            height: 30px;
+        }
+        .auto-style22 {
+            height: 30px;
+        }
+        .auto-style23 {
+            width: 245px;
+            height: 40px;
+        }
+        .auto-style24 {
+            width: 168px;
+            height: 40px;
+        }
+        .auto-style25 {
+            width: 119px;
+            height: 40px;
+        }
+        .auto-style26 {
+            width: 199px;
+            height: 40px;
+        }
+        .auto-style27 {
+            height: 40px;
+        }
     </style>
 </head>
 <body>
@@ -76,7 +114,7 @@
                     <td class="auto-style2"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink2" runat="server">Agregar Sucursal</asp:HyperLink>
+                    <td class="auto-style13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                         &nbsp;
                     </td>
                     <td class="auto-style14">
@@ -100,35 +138,35 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">
+                    <td class="auto-style23">
                         <asp:Label ID="lbGrupo" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="GRUPO Nº"></asp:Label>
                     </td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style11">&nbsp;</td>
-                    <td class="auto-style9">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style24"></td>
+                    <td class="auto-style25"></td>
+                    <td class="auto-style26"></td>
+                    <td class="auto-style27"></td>
+                    <td class="auto-style27"></td>
+                    <td class="auto-style27"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style11">&nbsp;</td>
-                    <td class="auto-style9">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style12"></td>
+                    <td class="auto-style10"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">
+                    <td class="auto-style18">
                         <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Agregar Sucursal"></asp:Label>
                     </td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style11">&nbsp;</td>
-                    <td class="auto-style9">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style19"></td>
+                    <td class="auto-style20"></td>
+                    <td class="auto-style21"></td>
+                    <td class="auto-style22"></td>
+                    <td class="auto-style22"></td>
+                    <td class="auto-style22"></td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
