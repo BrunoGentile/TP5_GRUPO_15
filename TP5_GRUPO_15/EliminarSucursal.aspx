@@ -20,6 +20,13 @@
             height: 26px;
             width: 191px;
         }
+        .auto-style5 {
+            width: 212px;
+        }
+        .auto-style6 {
+            height: 26px;
+            width: 212px;
+        }
     </style>
 </head>
 <body>
@@ -27,7 +34,7 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -36,7 +43,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -45,7 +52,9 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:Label ID="lblEliminarSucursal" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Eliminar sucursal"></asp:Label>
+                    </td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -54,7 +63,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -63,18 +72,20 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style2"></td>
+                    <td class="auto-style6"></td>
                     <td class="auto-style4">
                         <asp:TextBox ID="txtIdSucursalEliminar" runat="server" Width="217px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style2">
+                        <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" />
                     </td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
-                    <td class="auto-style2"></td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -83,7 +94,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
