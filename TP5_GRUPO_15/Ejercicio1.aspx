@@ -35,11 +35,11 @@
             width: 199px;
         }
         .auto-style11 {
-            width: 119px;
+            width: 152px;
         }
         .auto-style12 {
             height: 23px;
-            width: 119px;
+            width: 152px;
         }
         .auto-style13 {
             width: 245px;
@@ -50,7 +50,7 @@
             height: 16px;
         }
         .auto-style15 {
-            width: 119px;
+            width: 152px;
             height: 16px;
         }
         .auto-style16 {
@@ -69,7 +69,7 @@
             height: 30px;
         }
         .auto-style20 {
-            width: 119px;
+            width: 152px;
             height: 30px;
         }
         .auto-style21 {
@@ -88,7 +88,7 @@
             height: 40px;
         }
         .auto-style25 {
-            width: 119px;
+            width: 152px;
             height: 40px;
         }
         .auto-style26 {
@@ -180,9 +180,11 @@
                 <tr>
                     <td class="auto-style4">Nombre Sucursal: </td>
                     <td class="auto-style8">
-                        <asp:TextBox ID="TextBox1" runat="server" Height="16px" Width="169px"></asp:TextBox>
+                        <asp:TextBox ID="txtNombreSucursal" runat="server" Height="16px" Width="169px"></asp:TextBox>
                     </td>
-                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style12">
+                        <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal">ingrese una sucursal</asp:RequiredFieldValidator>
+                    </td>
                     <td class="auto-style10"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
@@ -193,7 +195,9 @@
                     <td class="auto-style8">
                         <asp:TextBox ID="txtDescripcion" runat="server" Height="39px" TextMode="MultiLine" Width="177px"></asp:TextBox>
                     </td>
-                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style12">
+                        <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDescripcion">Añada una descripción</asp:RequiredFieldValidator>
+                    </td>
                     <td class="auto-style10">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
@@ -206,7 +210,9 @@
                             <asp:ListItem>--Seleccionar--</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style12"></td>
+                    <td class="auto-style12">
+                        <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia" InitialValue="--Seleccionar--">Seleccione una provincia</asp:RequiredFieldValidator>
+                    </td>
                     <td class="auto-style10"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
@@ -217,11 +223,13 @@
                     <td class="auto-style8">
                         <asp:TextBox ID="txtDireccion" runat="server" Height="16px" Width="172px"></asp:TextBox>
                     </td>
-                    <td class="auto-style12">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style12">
+                        <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDireccion">ingrese una dirección</asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style10"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
                 </tr>
                 <tr>
                     <td class="auto-style4">&nbsp;</td>
