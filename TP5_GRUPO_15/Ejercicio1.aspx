@@ -118,7 +118,7 @@
                         &nbsp;
                     </td>
                     <td class="auto-style14">
-                        <asp:HyperLink ID="HyperLink1" runat="server">Listado de Sucursales</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ListarSucursal.aspx">Listado de Sucursales</asp:HyperLink>
                     </td>
                     <td class="auto-style15">
                         <asp:HyperLink ID="hlEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
