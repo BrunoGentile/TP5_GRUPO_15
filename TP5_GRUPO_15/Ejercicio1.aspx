@@ -67,26 +67,26 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style11"></td>
-                    <td class="auto-style9">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style12"></td>
+                    <td class="auto-style10"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:LinkButton ID="lbAgregarSucursal" runat="server">Agregar Sucursal</asp:LinkButton>
+                    <td class="auto-style13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink2" runat="server">Agregar Sucursal</asp:HyperLink>
+                        &nbsp;
                     </td>
                     <td class="auto-style14">
-                        <asp:LinkButton ID="lbListadoSucursales" runat="server">Listado de Sucursales</asp:LinkButton>
+                        <asp:HyperLink ID="HyperLink1" runat="server">Listado de Sucursales</asp:HyperLink>
                     </td>
                     <td class="auto-style15">
-                        <asp:LinkButton ID="lbEliminarSucursal" runat="server">Eliminar Sucursal</asp:LinkButton>
+                        <asp:HyperLink ID="hlEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
                     </td>
-                    <td class="auto-style16">&nbsp;</td>
-                    <td class="auto-style17">&nbsp;</td>
+                    <td class="auto-style16"></td>
+                    <td class="auto-style17"></td>
                     <td class="auto-style17"></td>
                     <td class="auto-style17"></td>
                 </tr>
