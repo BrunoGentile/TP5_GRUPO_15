@@ -25,6 +25,29 @@
         .auto-style9 {
             width: 116px;
         }
+        .auto-style10 {
+            width: 239px;
+            height: 30px;
+        }
+        .auto-style11 {
+            width: 170px;
+            height: 30px;
+        }
+        .auto-style12 {
+            width: 116px;
+            height: 30px;
+        }
+        .auto-style13 {
+            width: 47px;
+            height: 30px;
+        }
+        .auto-style14 {
+            width: 36px;
+            height: 30px;
+        }
+        .auto-style15 {
+            height: 30px;
+        }
     </style>
 </head>
 <body>
@@ -79,22 +102,24 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">
+                <td class="auto-style10">
                     <asp:Label ID="lblIdSucursal" runat="server" Text="Búsqueda ingrese Id sucursal:"></asp:Label>
                 </td>
-                <td class="auto-style4">
+                <td class="auto-style11">
                     <asp:TextBox ID="txtIdSucursal" runat="server" Width="200px"></asp:TextBox>
                 </td>
-                <td class="auto-style9">&nbsp;</td>
-                <td class="auto-style8">
+                <td class="auto-style12">
+                    <asp:RegularExpressionValidator ID="REV_IDSucursal" runat="server" ControlToValidate="txtIdSucursal" ForeColor="#CC0000" ValidationExpression="^\d+$">*</asp:RegularExpressionValidator>
+                </td>
+                <td class="auto-style13">
                     <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" />
                 </td>
-                <td class="auto-style7">&nbsp;</td>
-                <td>
+                <td class="auto-style14"></td>
+                <td class="auto-style15">
                     <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar todos" />
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style15"></td>
+                <td class="auto-style15"></td>
             </tr>
             <tr>
                 <td class="auto-style5">&nbsp;</td>
