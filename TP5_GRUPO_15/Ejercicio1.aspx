@@ -244,7 +244,7 @@
                 <tr>
                     <td class="auto-style4">&nbsp;</td>
                     <td class="auto-style8">
-                        <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" />
+                        <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" />
                     </td>
                     <td class="auto-style12">&nbsp;</td>
                     <td class="auto-style10">&nbsp;</td>
