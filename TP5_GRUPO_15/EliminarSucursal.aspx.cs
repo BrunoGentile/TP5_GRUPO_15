@@ -13,5 +13,15 @@ namespace TP5_GRUPO_15
         {
 
         }
+
+        protected void LimpiarCampos()
+        {
+            txtIdSucursalEliminar.Text = string.Empty;
+        }
+
+        protected void btnEliminar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos(); // LIMPIA TEXTBOX 
+        }
     }
 }

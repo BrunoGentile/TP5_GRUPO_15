@@ -132,15 +132,10 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">
-                    <asp:GridView ID="GridView1" runat="server" Width="237px">
+                <td colspan="6">
+                    <asp:GridView ID="gvSucursales" runat="server" AutoGenerateColumns="true" Width="237px">
                     </asp:GridView>
                 </td>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style9">&nbsp;</td>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style7">&nbsp;</td>
-                <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
