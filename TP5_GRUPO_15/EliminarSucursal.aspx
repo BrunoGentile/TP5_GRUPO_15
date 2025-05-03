@@ -72,7 +72,9 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style6"></td>
+                    <td class="auto-style6">
+                        <asp:Label ID="lblIdSucurssal" runat="server" Text="Ingresar ID sucursal :"></asp:Label>
+                    </td>
                     <td class="auto-style4">
                         <asp:TextBox ID="txtIdSucursalEliminar" runat="server" Width="217px"></asp:TextBox>
                     </td>
