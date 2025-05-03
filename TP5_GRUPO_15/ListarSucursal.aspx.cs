@@ -19,7 +19,7 @@ namespace TP5_GRUPO_15
         {
             if (!IsPostBack)
             {
-                //  consultasSql = @"SELECT Id_Sucursal, NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal FROM Sucursal";
+                
             }
         }
 

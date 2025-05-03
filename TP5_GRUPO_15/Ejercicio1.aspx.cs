@@ -15,12 +15,10 @@ namespace TP5_GRUPO_15
 
         }
 
-        protected System.Void Page_Load(System.Object sender, System.EventArgs e)
-        {
+       
+ 
 
-        }
-
-        protected System.Void btnAceptar_Click(System.Object sender, System.EventArgs e)
+        protected void btnAceptar_Click(System.Object sender, System.EventArgs e)
         {
             consultaSQL = "INSERT INTO Sucursal (NombreSucursal,DescripcionSucursal ,Id_ProvinciaSucursal,DireccionSucursal) VALUES ('" + txtNombreSucursal.Text +"','"+ txtDescripcion.Text + "',"+ ddlProvincia.SelectedValue + ",'"+ txtDireccion.Text + "')";
 
