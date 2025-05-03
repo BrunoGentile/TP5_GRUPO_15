@@ -31,6 +31,9 @@ namespace TP5_GRUPO_15
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
+            consultasSql = "SELECT Id_Sucursal, NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal FROM Sucursal WHERE Id_Sucursal = @Id_Sucursal";
+            conexion.FiltrarConsultas(consultasSql, gvSucursales, txtIdSucursal.Text);
+
             LimpiarCampos(); // LIMPIA TEXTBOX
         }
 
