@@ -81,9 +81,21 @@ namespace TP5_GRUPO_15
             sqlConnection.Close();
         }
 
+        public int EliminarSucursal(string consultaSql, string idSucursal)
+        {
+            SqlConnection sqlConnection = new SqlConnection(cadenaConexion);
+
+                SqlCommand sqlCommand = new SqlCommand(consultaSql, sqlConnection);
+                sqlCommand.Parameters.AddWithValue("@Id_Sucursal", idSucursal);
+
+                sqlConnection.Open();
+                int filasAfectadas = sqlCommand.ExecuteNonQuery();
+                return filasAfectadas;
+            }
+        }
 
 
 
     }
 
-}
+
