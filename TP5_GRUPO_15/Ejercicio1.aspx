@@ -183,7 +183,7 @@
                         <asp:TextBox ID="txtNombreSucursal" runat="server" Height="16px" Width="169px"></asp:TextBox>
                     </td>
                     <td class="auto-style12">
-                        <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal">ingrese una sucursal</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal" Display="None" ErrorMessage="Ingrese una sucursal">Ingrese una sucursal</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style10"></td>
                     <td class="auto-style2"></td>
@@ -196,9 +196,11 @@
                         <asp:TextBox ID="txtDescripcion" runat="server" Height="39px" TextMode="MultiLine" Width="177px"></asp:TextBox>
                     </td>
                     <td class="auto-style12">
-                        <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDescripcion">Añada una descripción</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDescripcion" Display="None" ErrorMessage="Añada una descripción">Añada una descripción</asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style10">
+                        <asp:ValidationSummary ID="vsMensajesErrores" runat="server" HeaderText="Se encontraron los siguientes errores:" />
+                    </td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
@@ -211,7 +213,7 @@
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style12">
-                        <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia" InitialValue="--Seleccionar--">Seleccione una provincia</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia" InitialValue="0" Display="None" ErrorMessage="Seleccione una provincia">Seleccione una provincia</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style10"></td>
                     <td class="auto-style2"></td>
@@ -224,7 +226,7 @@
                         <asp:TextBox ID="txtDireccion" runat="server" Height="16px" Width="172px"></asp:TextBox>
                     </td>
                     <td class="auto-style12">
-                        <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDireccion">ingrese una dirección</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDireccion" Display="None" ErrorMessage="Ingrese una dirección">Ingrese una dirección</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style10"></td>
                     <td class="auto-style2"></td>
