@@ -254,6 +254,17 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                 </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style8">
+                        <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+                    </td>
+                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                </tr>
             </table>
         </div>
     </form>

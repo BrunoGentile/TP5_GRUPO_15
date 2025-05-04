@@ -33,7 +33,7 @@ namespace TP5_GRUPO_15
 
         public void MostrarConsultas(string consultaSql, GridView gv)
         {
-           
+
             SqlConnection sqlConnection = new SqlConnection(cadenaConexion);
 
             sqlConnection.Open();
@@ -44,7 +44,7 @@ namespace TP5_GRUPO_15
             gv.DataSource = reader;
             gv.DataBind();
             sqlConnection.Close();
-       
+
         }
 
         public void FiltrarConsultas(string consultaSql, GridView gv, string idSucursal)
@@ -72,8 +72,8 @@ namespace TP5_GRUPO_15
             SqlDataReader reader = sqlCommand.ExecuteReader();
 
             ddl.DataSource = reader;
-            ddl.DataTextField = campoTexto;   
-            ddl.DataValueField = campoValor;  
+            ddl.DataTextField = campoTexto;
+            ddl.DataValueField = campoValor;
             ddl.DataBind();
             ddl.Items.Insert(0, new ListItem("--Seleccionar--", "0"));
 
@@ -85,12 +85,15 @@ namespace TP5_GRUPO_15
         {
             SqlConnection sqlConnection = new SqlConnection(cadenaConexion);
 
-                SqlCommand sqlCommand = new SqlCommand(consultaSql, sqlConnection);
-                sqlCommand.Parameters.AddWithValue("@Id_Sucursal", idSucursal);
+            SqlCommand sqlCommand = new SqlCommand(consultaSql, sqlConnection);
+            sqlCommand.Parameters.AddWithValue("@Id_Sucursal", idSucursal);
+
 
                 sqlConnection.Open();
                 int filasAfectadas = sqlCommand.ExecuteNonQuery();
                 return filasAfectadas;
+
+         
         }
         public bool ExisteSucursal(int Id_Sucursal)
         {
@@ -102,6 +105,7 @@ namespace TP5_GRUPO_15
                 SqlCommand sqlCommand = new SqlCommand(consultaSucursal, sqlConnection);
                 sqlCommand.Parameters.AddWithValue("@Id_Sucursal", Id_Sucursal);
 
+
                 sqlConnection.Open();
                 int cantidad = (int)sqlCommand.ExecuteScalar();
                 existe = cantidad > 0;
@@ -109,7 +113,34 @@ namespace TP5_GRUPO_15
 
             return existe;
         }
-    }     
+        
+
+
+        public int GuardarSucursal(string nombre, string descripcion, int idProvincia, string direccion)
+        {
+            SqlConnection sqlConnection = new SqlConnection(cadenaConexion);
+            SqlCommand sqlCommand = new SqlCommand();
+
+            sqlCommand.Connection = sqlConnection;
+            sqlCommand.CommandText = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
+                                     "VALUES (@Nombre, @Descripcion, @IdProvincia, @Direccion)";
+
+            sqlCommand.Parameters.AddWithValue("@Nombre", nombre);
+            sqlCommand.Parameters.AddWithValue("@Descripcion", descripcion);
+            sqlCommand.Parameters.AddWithValue("@IdProvincia", idProvincia);
+            sqlCommand.Parameters.AddWithValue("@Direccion", direccion);
+
+            sqlConnection.Open();
+            int filasAfectadas = sqlCommand.ExecuteNonQuery();
+            sqlConnection.Close();
+
+            return filasAfectadas;
+        }
+
+    }
 }
+
+    
+
 
 
