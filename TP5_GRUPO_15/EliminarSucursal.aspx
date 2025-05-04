@@ -26,6 +26,13 @@
             height: 26px;
             width: 173px;
         }
+        .auto-style7 {
+            height: 23px;
+        }
+        .auto-style8 {
+            width: 173px;
+            height: 23px;
+        }
         </style>
 </head>
 <body>
@@ -33,9 +40,15 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:HyperLink ID="hlAgregarSucursal" runat="server" NavigateUrl="~/Ejercicio1.aspx">Agregar sucursal</asp:HyperLink>
+                    </td>
+                    <td class="auto-style3">
+                        <asp:HyperLink ID="hlListadoSucursales" runat="server" NavigateUrl="~/ListarSucursal.aspx">Listado de sucursales</asp:HyperLink>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:HyperLink ID="hlEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar sucursal</asp:HyperLink>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -62,13 +75,13 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style7"></td>
+                    <td class="auto-style7"></td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style7"></td>
+                    <td class="auto-style7"></td>
+                    <td class="auto-style7"></td>
+                    <td class="auto-style7"></td>
                 </tr>
                 <tr>
                     <td class="auto-style4">

@@ -32,10 +32,18 @@ namespace TP5_GRUPO_15
 
              conexion.ejectutarConsultas(consultaSQL);
 
-            string nombre = txtNombreSucursal.Text;
+            lblNombreExistente.Text = string.Empty;
+
+            string nombre = txtNombreSucursal.Text.Trim();
             string descripcion = txtDescripcion.Text;
             int idProvincia = int.Parse(ddlProvincia.SelectedValue);
             string direccion = txtDireccion.Text;
+
+            if (conexion.ExisteNombreSucursal(nombre))
+            {
+                lblNombreExistente.Text = "Ya existe una sucursal con ese nombre.";
+                return;
+            }
 
             int filasAfectadas = conexion.GuardarSucursal(nombre, descripcion, idProvincia, direccion);
 

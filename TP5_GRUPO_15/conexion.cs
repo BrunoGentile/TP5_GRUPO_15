@@ -113,8 +113,22 @@ namespace TP5_GRUPO_15
 
             return existe;
         }
-        
 
+        public bool ExisteNombreSucursal(string nombreSucursal)
+        {
+            bool existe = false;
+            using (SqlConnection sqlConnection = new SqlConnection(cadenaConexion))
+            {
+                string consulta = "SELECT COUNT(*) FROM Sucursal WHERE NombreSucursal = @NombreSucursal";
+                SqlCommand sqlCommand = new SqlCommand(consulta, sqlConnection);
+                sqlCommand.Parameters.AddWithValue("@NombreSucursal", nombreSucursal);
+
+                sqlConnection.Open();
+                int cantidad = (int)sqlCommand.ExecuteScalar();
+                existe = cantidad > 0;
+            }
+            return existe;
+        }
 
         public int GuardarSucursal(string nombre, string descripcion, int idProvincia, string direccion)
         {
