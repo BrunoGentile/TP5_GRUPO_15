@@ -14,7 +14,6 @@
             height: 26px;
         }
         .auto-style3 {
-            width: 191px;
         }
         .auto-style4 {
             height: 26px;
@@ -76,7 +75,7 @@
                         <asp:Label ID="lblIdSucurssal" runat="server" Font-Size="Large" Text="Ingresar ID sucursal :"></asp:Label>
                     </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="txtIdSucursalEliminar" runat="server" Width="217px"></asp:TextBox>
+                        <asp:TextBox ID="txtIdSucursalEliminar" runat="server" oninput="this.style.backgroundColor='white'" Width="217px"></asp:TextBox>
                     </td>
                     <td class="auto-style6">
                         <asp:RegularExpressionValidator ID="REV_IdSucursal" runat="server" ControlToValidate="txtIdSucursalEliminar" ForeColor="#CC0000" ValidationExpression="^\d+$" ValidationGroup="CampoVacío">*</asp:RegularExpressionValidator>
@@ -99,10 +98,9 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">
+                    <td class="auto-style3" colspan="2">
                         <asp:Label ID="LBL_Message" runat="server"></asp:Label>
                     </td>
-                    <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

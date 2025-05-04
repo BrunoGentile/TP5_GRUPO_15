@@ -23,6 +23,11 @@ namespace TP5_GRUPO_15
             txtIdSucursalEliminar.Text = string.Empty;
         }
 
+        protected void PintarRojo()
+        {
+            txtIdSucursalEliminar.BackColor = System.Drawing.Color.Red;
+        }
+
         protected void MostrarMensaje(int FilasAfectadas)
         {
             if (FilasAfectadas == 1)
@@ -32,6 +37,7 @@ namespace TP5_GRUPO_15
             else
             {
                 LBL_Message.Text = "No se ha encontrado la sucursal";
+                PintarRojo();
             }
         }
 
@@ -49,7 +55,5 @@ namespace TP5_GRUPO_15
 
             LimpiarCampos(); // LIMPIA TEXTBOX 
         }
-
-
     }
 }
