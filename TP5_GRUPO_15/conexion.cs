@@ -62,7 +62,24 @@ namespace TP5_GRUPO_15
             sqlConnection.Close();
         }
 
+        public void CargarDropDownList(string consultaSql, DropDownList ddl, string campoTexto, string campoValor)
+        {
+            SqlConnection sqlConnection = new SqlConnection(cadenaConexion);
 
+            sqlConnection.Open();
+
+            SqlCommand sqlCommand = new SqlCommand(consultaSql, sqlConnection);
+            SqlDataReader reader = sqlCommand.ExecuteReader();
+
+            ddl.DataSource = reader;
+            ddl.DataTextField = campoTexto;   
+            ddl.DataValueField = campoValor;  
+            ddl.DataBind();
+            ddl.Items.Insert(0, new ListItem("--Seleccionar--", "0"));
+
+            reader.Close();
+            sqlConnection.Close();
+        }
 
 
 
