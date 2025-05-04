@@ -43,6 +43,8 @@ namespace TP5_GRUPO_15
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
+            lblIdInexistente.Text = string.Empty;
+
             string idSucursal = txtIdSucursalEliminar.Text.Trim();
 
             int IdSucursal;
