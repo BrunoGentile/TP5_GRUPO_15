@@ -45,6 +45,16 @@ namespace TP5_GRUPO_15
         {
             string idSucursal = txtIdSucursalEliminar.Text.Trim();
 
+            int IdSucursal;
+
+            bool haySucursal = int.TryParse(txtIdSucursalEliminar.Text, out IdSucursal);
+
+            if (haySucursal && !conexion.ExisteSucursal(IdSucursal))
+            {
+                lblIdInexistente.Text = "No existe una sucursal con ese ID.";
+                return;
+            }
+
             if (!string.IsNullOrEmpty(idSucursal))
             {
                 consultaSQL = "DELETE FROM Sucursal WHERE Id_Sucursal = @Id_Sucursal";

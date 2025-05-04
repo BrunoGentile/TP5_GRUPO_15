@@ -80,6 +80,8 @@
                     <td class="auto-style6">
                         <asp:RegularExpressionValidator ID="REV_IdSucursal" runat="server" ControlToValidate="txtIdSucursalEliminar" ForeColor="#CC0000" ValidationExpression="^\d+$" ValidationGroup="CampoVacío">*</asp:RegularExpressionValidator>
                         <asp:RequiredFieldValidator ID="RFV_Idsucursal" runat="server" ControlToValidate="txtIdSucursalEliminar" ValidationGroup="CampoVacio">Ingrese Id de sucursal</asp:RequiredFieldValidator>
+                        <br />
+                        <asp:Label ID="lblIdInexistente" runat="server"></asp:Label>
                     </td>
                     <td class="auto-style2">
                         <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" ValidationGroup="CampoVacio" />

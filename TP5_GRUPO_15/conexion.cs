@@ -91,11 +91,25 @@ namespace TP5_GRUPO_15
                 sqlConnection.Open();
                 int filasAfectadas = sqlCommand.ExecuteNonQuery();
                 return filasAfectadas;
-            }
         }
+        public bool ExisteSucursal(int Id_Sucursal)
+        {
+            bool existe = false;
 
+            using (SqlConnection sqlConnection = new SqlConnection(cadenaConexion))
+            {
+                string consultaSucursal = "SELECT COUNT(*) FROM Sucursal WHERE Id_Sucursal = @Id_Sucursal";
+                SqlCommand sqlCommand = new SqlCommand(consultaSucursal, sqlConnection);
+                sqlCommand.Parameters.AddWithValue("@Id_Sucursal", Id_Sucursal);
 
+                sqlConnection.Open();
+                int cantidad = (int)sqlCommand.ExecuteScalar();
+                existe = cantidad > 0;
+            }
 
-    }
+            return existe;
+        }
+    }     
+}
 
 
