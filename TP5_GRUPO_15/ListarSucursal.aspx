@@ -123,7 +123,9 @@
                 <td class="auto-style15"></td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">
+                    <asp:Label ID="lblContador" runat="server"></asp:Label>
+                </td>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
