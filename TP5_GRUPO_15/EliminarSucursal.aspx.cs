@@ -23,6 +23,18 @@ namespace TP5_GRUPO_15
             txtIdSucursalEliminar.Text = string.Empty;
         }
 
+        protected void MostrarMensaje(int FilasAfectadas)
+        {
+            if (FilasAfectadas == 1)
+            {
+                LBL_Message.Text = "La sucursal se ha eliminado con éxito";
+            }
+            else
+            {
+                LBL_Message.Text = "No se ha encontrado la sucursal";
+            }
+        }
+
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
             string idSucursal = txtIdSucursalEliminar.Text.Trim();
@@ -30,11 +42,12 @@ namespace TP5_GRUPO_15
             if (!string.IsNullOrEmpty(idSucursal))
             {
                 consultaSQL = "DELETE FROM Sucursal WHERE Id_Sucursal = @Id_Sucursal";
-                conexion.EliminarSucursal(consultaSQL, idSucursal);
+                int FilasAfectadas = conexion.EliminarSucursal(consultaSQL, idSucursal);
+                
+                MostrarMensaje(FilasAfectadas);
             }
 
             LimpiarCampos(); // LIMPIA TEXTBOX 
-
         }
 
 
