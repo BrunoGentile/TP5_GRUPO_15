@@ -20,6 +20,13 @@
             height: 26px;
             width: 191px;
         }
+        .auto-style5 {
+            width: 173px;
+        }
+        .auto-style6 {
+            height: 26px;
+            width: 173px;
+        }
         </style>
 </head>
 <body>
@@ -29,7 +36,7 @@
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -38,7 +45,7 @@
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -49,7 +56,7 @@
                         <asp:Label ID="lblEliminarSucursal" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Eliminar sucursal"></asp:Label>
                     </td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -58,7 +65,7 @@
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -71,18 +78,21 @@
                     <td class="auto-style4">
                         <asp:TextBox ID="txtIdSucursalEliminar" runat="server" Width="217px"></asp:TextBox>
                     </td>
+                    <td class="auto-style6">
+                        <asp:RegularExpressionValidator ID="REV_IdSucursal" runat="server" ControlToValidate="txtIdSucursalEliminar" ForeColor="#CC0000" ValidationExpression="^\d+$" ValidationGroup="CampoVacío">*</asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator ID="RFV_Idsucursal" runat="server" ControlToValidate="txtIdSucursalEliminar" ValidationGroup="CampoVacio">Ingrese Id de sucursal</asp:RequiredFieldValidator>
+                    </td>
                     <td class="auto-style2">
-                        <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" />
+                        <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" ValidationGroup="CampoVacio" />
                     </td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
-                    <td class="auto-style2"></td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -91,7 +101,7 @@
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

@@ -51,6 +51,24 @@ namespace TP5_GRUPO_15
         protected global::System.Web.UI.WebControls.TextBox txtIdSucursalEliminar;
 
         /// <summary>
+        /// Control REV_IdSucursal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REV_IdSucursal;
+
+        /// <summary>
+        /// Control RFV_Idsucursal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_Idsucursal;
+
+        /// <summary>
         /// Control btnEliminar.
         /// </summary>
         /// <remarks>

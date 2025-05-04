@@ -23,7 +23,7 @@
             width: 47px;
         }
         .auto-style9 {
-            width: 116px;
+            width: 200px;
         }
         .auto-style10 {
             width: 239px;
@@ -34,7 +34,7 @@
             height: 30px;
         }
         .auto-style12 {
-            width: 116px;
+            width: 200px;
             height: 30px;
         }
         .auto-style13 {
@@ -110,13 +110,14 @@
                 </td>
                 <td class="auto-style12">
                     <asp:RegularExpressionValidator ID="REV_IDSucursal" runat="server" ControlToValidate="txtIdSucursal" ForeColor="#CC0000" ValidationExpression="^\d+$">*</asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="rfvCampoVacio" runat="server" ControlToValidate="txtIdSucursal" ValidationGroup="EspacioVacio">Ingresar Id de sucursal</asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style13">
-                    <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" />
+                    <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" ValidationGroup="EspacioVacio" />
                 </td>
                 <td class="auto-style14"></td>
                 <td class="auto-style15">
-                    <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar todos" OnClick="btnMostrarTodos_Click" />
+                    <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar todos" OnClick="btnMostrarTodos_Click" ValidationGroup="0" />
                 </td>
                 <td class="auto-style15"></td>
                 <td class="auto-style15"></td>
