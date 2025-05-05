@@ -42,6 +42,7 @@ namespace TP5_GRUPO_15
             if (!cbPermitirDuplicados.Checked && conexion.ExisteNombreSucursal(nombre))
             {
                 lblNombreExistente.Text = "Ya existe una sucursal con ese nombre.";
+                txtNombreSucursal.BackColor = System.Drawing.Color.Red;
                 return;
             }
 
@@ -60,12 +61,18 @@ namespace TP5_GRUPO_15
             txtDireccion.Text = string.Empty;
         }
 
+        private void ResetearColor()
+        {
+            txtNombreSucursal.BackColor = System.Drawing.Color.White;
+        }
+
         private void MostrarMensajeOperacion(bool exito)
         {
             if (exito)
             {
                 lblMensaje.ForeColor = System.Drawing.Color.Green;
                 lblMensaje.Text = "✅ La operación fue exitosa.";
+                ResetearColor();
             }
             else
             {
