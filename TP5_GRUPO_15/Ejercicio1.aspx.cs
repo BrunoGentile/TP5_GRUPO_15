@@ -39,7 +39,7 @@ namespace TP5_GRUPO_15
             int idProvincia = int.Parse(ddlProvincia.SelectedValue);
             string direccion = txtDireccion.Text;
 
-            if (conexion.ExisteNombreSucursal(nombre))
+            if (!cbPermitirDuplicados.Checked && conexion.ExisteNombreSucursal(nombre))
             {
                 lblNombreExistente.Text = "Ya existe una sucursal con ese nombre.";
                 return;

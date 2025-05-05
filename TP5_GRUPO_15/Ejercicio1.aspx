@@ -27,34 +27,12 @@
             height: 23px;
             width: 168px;
         }
-        .auto-style9 {
-            width: 199px;
-        }
-        .auto-style10 {
-            height: 23px;
-            width: 199px;
-        }
-        .auto-style11 {
-            width: 152px;
-        }
-        .auto-style12 {
-            height: 23px;
-            width: 152px;
-        }
         .auto-style13 {
             width: 245px;
             height: 16px;
         }
         .auto-style14 {
             width: 168px;
-            height: 16px;
-        }
-        .auto-style15 {
-            width: 152px;
-            height: 16px;
-        }
-        .auto-style16 {
-            width: 199px;
             height: 16px;
         }
         .auto-style17 {
@@ -68,14 +46,6 @@
             width: 168px;
             height: 30px;
         }
-        .auto-style20 {
-            width: 152px;
-            height: 30px;
-        }
-        .auto-style21 {
-            width: 199px;
-            height: 30px;
-        }
         .auto-style22 {
             height: 30px;
         }
@@ -87,16 +57,46 @@
             width: 168px;
             height: 40px;
         }
-        .auto-style25 {
-            width: 152px;
-            height: 40px;
-        }
-        .auto-style26 {
-            width: 199px;
-            height: 40px;
-        }
         .auto-style27 {
             height: 40px;
+        }
+        .auto-style28 {
+            height: 23px;
+            width: 207px;
+        }
+        .auto-style29 {
+            width: 207px;
+            height: 16px;
+        }
+        .auto-style30 {
+            width: 207px;
+        }
+        .auto-style31 {
+            width: 207px;
+            height: 40px;
+        }
+        .auto-style32 {
+            width: 207px;
+            height: 30px;
+        }
+        .auto-style33 {
+            height: 23px;
+            width: 234px;
+        }
+        .auto-style34 {
+            width: 234px;
+            height: 16px;
+        }
+        .auto-style35 {
+            width: 234px;
+        }
+        .auto-style36 {
+            width: 234px;
+            height: 40px;
+        }
+        .auto-style37 {
+            width: 234px;
+            height: 30px;
         }
     </style>
 </head>
@@ -107,8 +107,8 @@
                 <tr>
                     <td class="auto-style4"></td>
                     <td class="auto-style8"></td>
-                    <td class="auto-style12"></td>
-                    <td class="auto-style10"></td>
+                    <td class="auto-style28"></td>
+                    <td class="auto-style33"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
@@ -120,10 +120,10 @@
                     <td class="auto-style14">
                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ListarSucursal.aspx">Listado de Sucursales</asp:HyperLink>
                     </td>
-                    <td class="auto-style15">
+                    <td class="auto-style29">
                         <asp:HyperLink ID="hlEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
                     </td>
-                    <td class="auto-style16"></td>
+                    <td class="auto-style34"></td>
                     <td class="auto-style17"></td>
                     <td class="auto-style17"></td>
                     <td class="auto-style17"></td>
@@ -131,8 +131,8 @@
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style11">&nbsp;</td>
-                    <td class="auto-style9">&nbsp;</td>
+                    <td class="auto-style30">&nbsp;</td>
+                    <td class="auto-style35">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -142,8 +142,8 @@
                         <asp:Label ID="lbGrupo" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="GRUPO Nº"></asp:Label>
                     </td>
                     <td class="auto-style24"></td>
-                    <td class="auto-style25"></td>
-                    <td class="auto-style26"></td>
+                    <td class="auto-style31"></td>
+                    <td class="auto-style36"></td>
                     <td class="auto-style27"></td>
                     <td class="auto-style27"></td>
                     <td class="auto-style27"></td>
@@ -151,8 +151,8 @@
                 <tr>
                     <td class="auto-style4"></td>
                     <td class="auto-style8"></td>
-                    <td class="auto-style12"></td>
-                    <td class="auto-style10"></td>
+                    <td class="auto-style28"></td>
+                    <td class="auto-style33"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
@@ -162,8 +162,8 @@
                         <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Agregar Sucursal"></asp:Label>
                     </td>
                     <td class="auto-style19"></td>
-                    <td class="auto-style20"></td>
-                    <td class="auto-style21"></td>
+                    <td class="auto-style32"></td>
+                    <td class="auto-style37"></td>
                     <td class="auto-style22"></td>
                     <td class="auto-style22"></td>
                     <td class="auto-style22"></td>
@@ -171,8 +171,8 @@
                 <tr>
                     <td class="auto-style4"></td>
                     <td class="auto-style8"></td>
-                    <td class="auto-style12"></td>
-                    <td class="auto-style10"></td>
+                    <td class="auto-style28"></td>
+                    <td class="auto-style33"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
@@ -182,12 +182,14 @@
                     <td class="auto-style8">
                         <asp:TextBox ID="txtNombreSucursal" runat="server" Height="16px" Width="169px"></asp:TextBox>
                     </td>
-                    <td class="auto-style12">
-                        <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal" Display="None" ErrorMessage="Ingrese una sucursal">Ingrese una sucursal</asp:RequiredFieldValidator>
+                    <td class="auto-style28">
+                        <asp:CheckBox ID="cbPermitirDuplicados" runat="server" Checked="True" Text="permitir nombres duplicados" />
                         <br />
+                    </td>
+                    <td class="auto-style33">
+                        <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal" Display="None" ErrorMessage="Ingrese una sucursal">Ingrese una sucursal</asp:RequiredFieldValidator>
                         <asp:Label ID="lblNombreExistente" runat="server"></asp:Label>
                     </td>
-                    <td class="auto-style10"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
@@ -197,10 +199,10 @@
                     <td class="auto-style8">
                         <asp:TextBox ID="txtDescripcion" runat="server" Height="39px" TextMode="MultiLine" Width="177px"></asp:TextBox>
                     </td>
-                    <td class="auto-style12">
+                    <td class="auto-style28">
                         <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDescripcion" Display="None" ErrorMessage="Añada una descripción">Añada una descripción</asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style10">
+                    <td class="auto-style33">
                         <asp:ValidationSummary ID="vsMensajesErrores" runat="server" HeaderText="Se encontraron los siguientes errores:" />
                     </td>
                     <td class="auto-style2">&nbsp;</td>
@@ -214,10 +216,10 @@
                             <asp:ListItem>--Seleccionar--</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style12">
+                    <td class="auto-style28">
                         <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia" InitialValue="0" Display="None" ErrorMessage="Seleccione una provincia">Seleccione una provincia</asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style10"></td>
+                    <td class="auto-style33"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
@@ -227,10 +229,10 @@
                     <td class="auto-style8">
                         <asp:TextBox ID="txtDireccion" runat="server" Height="16px" Width="172px"></asp:TextBox>
                     </td>
-                    <td class="auto-style12">
+                    <td class="auto-style28">
                         <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDireccion" Display="None" ErrorMessage="Ingrese una dirección">Ingrese una dirección</asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style10"></td>
+                    <td class="auto-style33"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
@@ -239,8 +241,8 @@
                     <td class="auto-style4">&nbsp;</td>
                     <td class="auto-style8">
                         &nbsp;</td>
-                    <td class="auto-style12">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style28">&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
@@ -250,8 +252,8 @@
                     <td class="auto-style8">
                         <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" />
                     </td>
-                    <td class="auto-style12">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style28">&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
@@ -261,8 +263,8 @@
                     <td class="auto-style8">
                         <asp:Label ID="lblMensaje" runat="server"></asp:Label>
                     </td>
-                    <td class="auto-style12">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style28">&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
