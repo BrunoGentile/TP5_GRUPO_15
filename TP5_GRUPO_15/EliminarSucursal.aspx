@@ -141,6 +141,7 @@
                         &nbsp;</td>
                     <td class="auto-style3">
                         <asp:Button ID="btnEliminarConfirmado" runat="server" OnClick="btnEliminarConfirmado_Click" Text="Confirmar" Visible="False" />
+                        <asp:Button ID="btnCancelar" runat="server" OnClick="btnCancelar_Click" Text="Cancelar" Visible="False" />
                     </td>
                     <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>

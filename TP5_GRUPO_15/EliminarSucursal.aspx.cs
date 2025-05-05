@@ -64,6 +64,7 @@ namespace TP5_GRUPO_15
                 consultaSQL = "SELECT * FROM Sucursal WHERE Id_Sucursal = @Id_Sucursal";
                 conexion.FiltrarConsultas(consultaSQL, gvEliminar, idSucursal);
                 btnEliminarConfirmado.Visible = gvEliminar.Rows.Count > 0;
+                btnCancelar.Visible=gvEliminar.Rows.Count > 0;
             }
 
            
@@ -81,6 +82,15 @@ namespace TP5_GRUPO_15
             btnEliminarConfirmado.Visible = false;
             LimpiarCampos();
             
+        }
+
+        protected void btnCancelar_Click(object sender, EventArgs e)
+        {
+            gvEliminar.DataSource = null;
+            gvEliminar.DataBind();
+            btnEliminarConfirmado.Visible = false;
+            btnCancelar.Visible = false;
+            LimpiarCampos();
         }
     }
 }
