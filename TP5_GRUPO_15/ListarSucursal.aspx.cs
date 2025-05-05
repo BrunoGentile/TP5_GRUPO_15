@@ -20,7 +20,7 @@ namespace TP5_GRUPO_15
         {
             if (!IsPostBack)
             {
-                
+
             }
         }
 
@@ -42,17 +42,23 @@ namespace TP5_GRUPO_15
 
         protected void btnMostrarTodos_Click(object sender, EventArgs e)
         {
-            
-          consultasSql = "SELECT S.Id_Sucursal, S.NombreSucursal, S.DescripcionSucursal, P.DescripcionProvincia AS Provincia, S.DireccionSucursal FROM Sucursal S INNER JOIN Provincia P ON S.Id_ProvinciaSucursal = P.Id_Provincia";
+
+            consultasSql = "SELECT S.Id_Sucursal, S.NombreSucursal, S.DescripcionSucursal, P.DescripcionProvincia AS Provincia, S.DireccionSucursal FROM Sucursal S INNER JOIN Provincia P ON S.Id_ProvinciaSucursal = P.Id_Provincia";
             conexion.MostrarConsultas(consultasSql, gvSucursales);
 
             lblContador.Text = "Registros encontrados: " + gvSucursales.Rows.Count.ToString();
 
             LimpiarCampos(); // LIMPIA TEXTBOX
-            
+
         }
 
-   
+
+        protected void btnFiltrarProvincia_Click(object sender, EventArgs e)
+        {
+            consultasSql = "SELECT Id_Sucursal, NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal FROM Sucursal WHERE Id_ProvinciaSucursal = @Id_ProvinciaSucursal";
+            conexion.FiltrarProvincias(consultasSql, gvSucursales, txtIdProvincia.Text);
+
+            LimpiarCampos(); // LIMPIA TEXTBOX
         }
     }
-
+}

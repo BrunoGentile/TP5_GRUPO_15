@@ -106,14 +106,14 @@
                     <asp:Label ID="lblIdSucursal" runat="server" Text="Búsqueda ingrese Id sucursal:"></asp:Label>
                 </td>
                 <td class="auto-style11">
-                    <asp:TextBox ID="txtIdSucursal" runat="server" Width="200px"></asp:TextBox>
+                    <asp:TextBox ID="txtIdSucursal" runat="server" Width="200px" ValidationGroup="1"></asp:TextBox>
                 </td>
                 <td class="auto-style12">
-                    <asp:RegularExpressionValidator ID="REV_IDSucursal" runat="server" ControlToValidate="txtIdSucursal" ForeColor="#CC0000" ValidationExpression="^\d+$">*</asp:RegularExpressionValidator>
-                    <asp:RequiredFieldValidator ID="rfvCampoVacio" runat="server" ControlToValidate="txtIdSucursal" ValidationGroup="EspacioVacio">Ingresar Id de sucursal</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="REV_IDSucursal" runat="server" ControlToValidate="txtIdSucursal" ForeColor="#CC0000" ValidationExpression="^\d+$" ValidationGroup="1">*</asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="rfvCampoVacio" runat="server" ControlToValidate="txtIdSucursal" ValidationGroup="1">Ingresar Id de sucursal</asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style13">
-                    <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" ValidationGroup="EspacioVacio" />
+                    <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" ValidationGroup="1" />
                 </td>
                 <td class="auto-style14"></td>
                 <td class="auto-style15">
@@ -121,6 +121,35 @@
                 </td>
                 <td class="auto-style15"></td>
                 <td class="auto-style15"></td>
+            </tr>
+            <tr>
+                <td class="auto-style5">
+                    Búsqueda Ingrese Id ProvinciaSucursal:</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="txtIdProvincia" runat="server" Height="16px"  Width="199px" ValidationGroup="2"></asp:TextBox>
+                </td>
+                <td class="auto-style9">
+                    <asp:RegularExpressionValidator ID="revProvincia" runat="server" ControlToValidate="txtIdProvincia" ForeColor="#CC0000" ValidationExpression="^\d+$" ValidationGroup="2">*</asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="txtIdProvincia" ValidationGroup="2">ingrese Id de Provincia Sucursal</asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style8">
+                    <asp:Button ID="btnFiltrarProvincia" runat="server" OnClick="btnFiltrarProvincia_Click" Text="Filtrar" ValidationGroup="2" />
+                </td>
+                <td class="auto-style7">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">
+                    &nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style8">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style5">

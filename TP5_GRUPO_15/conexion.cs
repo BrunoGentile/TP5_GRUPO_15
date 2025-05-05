@@ -30,6 +30,20 @@ namespace TP5_GRUPO_15
             return filasAfectadas;
         }
 
+        public void FiltrarProvincias(string consultaSql, GridView gv, string idProvinciaSucursal)
+        {
+            SqlConnection sqlConnection = new SqlConnection(cadenaConexion);
+
+            sqlConnection.Open();
+
+            SqlCommand sqlCommand = new SqlCommand(consultaSql, sqlConnection);
+
+            sqlCommand.Parameters.AddWithValue("@Id_ProvinciaSucursal", idProvinciaSucursal);
+            SqlDataReader reader = sqlCommand.ExecuteReader();
+            gv.DataSource = reader;
+            gv.DataBind();
+            sqlConnection.Close();
+        }
 
         public void MostrarConsultas(string consultaSql, GridView gv)
         {
