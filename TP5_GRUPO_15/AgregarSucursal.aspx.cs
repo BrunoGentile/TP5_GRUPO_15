@@ -30,8 +30,6 @@ namespace TP5_GRUPO_15
         {
             consultaSQL = "INSERT INTO Sucursal (NombreSucursal,DescripcionSucursal ,Id_ProvinciaSucursal,DireccionSucursal) VALUES ('" + txtNombreSucursal.Text + "','" + txtDescripcion.Text + "'," + ddlProvincia.SelectedValue + ",'" + txtDireccion.Text + "')";
 
-             conexion.ejectutarConsultas(consultaSQL);
-
             lblNombreExistente.Text = string.Empty;
 
             string nombre = txtNombreSucursal.Text.Trim();

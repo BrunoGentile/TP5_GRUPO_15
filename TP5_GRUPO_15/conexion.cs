@@ -11,8 +11,7 @@ namespace TP5_GRUPO_15
 {
     public class conexion
     {
-        private const string cadenaConexion = @"Data Source=Localhost\SQLEXPRESS;Initial Catalog = BDSucursales; Integrated Security = True; Encrypt=True; TrustServerCertificate=True";
-
+        private const string cadenaConexion = "Data Source=localhost\\sqlexpress; Initial Catalog=BDSucursales;Integrated Security = True";
 
         public int ejectutarConsultas(string consultaSql)
         {
