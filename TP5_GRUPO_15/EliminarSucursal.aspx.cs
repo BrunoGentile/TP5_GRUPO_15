@@ -12,6 +12,7 @@ namespace TP5_GRUPO_15
     public partial class EliminarSucursal : System.Web.UI.Page
     {
         private string consultaSQL;
+        private string consultaSQL2;
         private conexion conexion = new conexion();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -43,6 +44,7 @@ namespace TP5_GRUPO_15
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
+            LBL_Message.Text = string.Empty;
             lblIdInexistente.Text = string.Empty;
 
             string idSucursal = txtIdSucursalEliminar.Text.Trim();
@@ -59,13 +61,26 @@ namespace TP5_GRUPO_15
 
             if (!string.IsNullOrEmpty(idSucursal))
             {
-                consultaSQL = "DELETE FROM Sucursal WHERE Id_Sucursal = @Id_Sucursal";
-                int FilasAfectadas = conexion.EliminarSucursal(consultaSQL, idSucursal);
-                
-                MostrarMensaje(FilasAfectadas);
+                consultaSQL = "SELECT * FROM Sucursal WHERE Id_Sucursal = @Id_Sucursal";
+                conexion.FiltrarConsultas(consultaSQL, gvEliminar, idSucursal);
+                btnEliminarConfirmado.Visible = gvEliminar.Rows.Count > 0;
             }
 
-            LimpiarCampos(); // LIMPIA TEXTBOX 
+           
+        }
+
+        protected void btnEliminarConfirmado_Click(object sender, EventArgs e)
+        {
+            string idSucursal = txtIdSucursalEliminar.Text.Trim();
+            consultaSQL2 = "DELETE FROM Sucursal WHERE Id_Sucursal = @Id_Sucursal";
+            int FilasAfectadas = conexion.EliminarSucursal(consultaSQL2,idSucursal);
+
+            MostrarMensaje(FilasAfectadas);
+            gvEliminar.DataSource = null;
+            gvEliminar.DataBind();
+            btnEliminarConfirmado.Visible = false;
+            LimpiarCampos();
+            
         }
     }
 }

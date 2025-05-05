@@ -98,15 +98,15 @@ namespace TP5_GRUPO_15
         public int EliminarSucursal(string consultaSql, string idSucursal)
         {
             SqlConnection sqlConnection = new SqlConnection(cadenaConexion);
+                sqlConnection.Open();
 
             SqlCommand sqlCommand = new SqlCommand(consultaSql, sqlConnection);
             sqlCommand.Parameters.AddWithValue("@Id_Sucursal", idSucursal);
 
 
-                sqlConnection.Open();
                 int filasAfectadas = sqlCommand.ExecuteNonQuery();
                 return filasAfectadas;
-
+                sqlConnection.Close();
          
         }
         public bool ExisteSucursal(int Id_Sucursal)
