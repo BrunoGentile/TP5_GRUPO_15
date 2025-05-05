@@ -114,7 +114,7 @@
                     <td class="auto-style2"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
+                    <td class="auto-style13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Ejercicio1.aspx">Agregar Sucursal</asp:HyperLink>
                         &nbsp;
                     </td>
                     <td class="auto-style14">
@@ -169,13 +169,13 @@
                     <td class="auto-style22"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style11">&nbsp;</td>
-                    <td class="auto-style9">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style12"></td>
+                    <td class="auto-style10"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
                 </tr>
                 <tr>
                     <td class="auto-style4">Nombre Sucursal: </td>
@@ -184,6 +184,8 @@
                     </td>
                     <td class="auto-style12">
                         <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal" Display="None" ErrorMessage="Ingrese una sucursal">Ingrese una sucursal</asp:RequiredFieldValidator>
+                        <br />
+                        <asp:Label ID="lblNombreExistente" runat="server"></asp:Label>
                     </td>
                     <td class="auto-style10"></td>
                     <td class="auto-style2"></td>
