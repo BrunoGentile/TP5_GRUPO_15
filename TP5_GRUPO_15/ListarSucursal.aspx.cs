@@ -35,7 +35,14 @@ namespace TP5_GRUPO_15
             consultasSql = "SELECT Id_Sucursal, NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal FROM Sucursal WHERE Id_Sucursal = @Id_Sucursal";
             conexion.FiltrarConsultas(consultasSql, gvSucursales, txtIdSucursal.Text);
 
-            lblContador.Text = "Registros encontrados: " + gvSucursales.Rows.Count.ToString();
+            if (gvSucursales.Rows.Count == 0)
+            {
+                lblContador.Text = "❌ No se encontró ningún registro con el ID ingresado.";
+            }
+            else
+            {
+                lblContador.Text = "Registros encontrados: " + gvSucursales.Rows.Count.ToString();
+            }
 
             LimpiarCampos(); // LIMPIA TEXTBOX
         }
